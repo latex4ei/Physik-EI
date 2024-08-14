@@ -1,0 +1,36 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{tikzpicture}
+  % Erde zeichnen
+  \draw[] (0,0) circle (2.5cm);
+
+  % Äquator zeichnen
+  \draw[dashed] (-2.5,0) -- (2.5,0);
+
+  % Rotationsachse
+  \draw[->, thick] (0,-3.5) -- (0,3.5) node[above] {$\omega$};
+
+  % Punkt am Äquator
+  \coordinate (P) at (1,0);
+  \filldraw[red] (P) circle (2pt) node[anchor=west] {P};
+
+  % Geschwindigkeitsvektor
+  \draw[->, thick] (P) -- ++(1,0) node[above] {$\vec{v}$};
+
+  % Corioliskraft Vektor
+  \draw[->, thick, blue, densely dotted] (P) -- ++(0,0.5) node[right] {$\vec{F}_C$};
+
+
+  % Himmelsrichtungen
+  \node at (-3,0) {W};
+  \node at (3,0) {O};
+  \node at (0,4) {N};
+  \node at (0,-4) {S};
+  
+\end{tikzpicture}
+
+\end{document}
