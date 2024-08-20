@@ -196,7 +196,23 @@ Korrektur von Kurzsichtigkeit\\
 \item[$\rightarrow$] Bild immer virtuell und aufrecht
 \end{itemize}
 \subsubsection{Dicke Linsen}
+$\frac{1}{f}=(\frac{n}{n_0}-1)(\frac{1}{r_1}-\frac{1}{r_2}+\frac{(n-n_0)d}{n\cdot r_1 \cdot r_2})$\\
+$h_1=-\frac{f(n-1)d}{n\cdot r_2}$ \qquad $h_2=-\frac{f(n-1)d}{n\cdot r_1}$
 \subsubsection{Linsensysteme}
+\begin{itemize}
+	\item \textbf{Lochkamera} \\
+		$S=\frac{D(b+g)}{g}$
+	\item \textbf{Lupe} \\
+		$V=\frac{\tan \alpha_L}{\alpha_0}=\frac{G/f}{G/s_0}=\frac{s_0}{f}$ mit $s_0=\SI{25}{\centi \meter}$
+	\item \textbf{Fernrohr} \\
+		$V=\frac{f_{ob}}{f_{ok}}$, $g\approx \infty$, $b\approx f$ \\
+		$V_T=\frac{f}{g-f}=\frac{b-f}{f}\approx 0$
+	\item \textbf{Mikroskop} \\
+		$V=V_{ok}\cdot V_{ob}=\frac{(d-f_{ob})s_0}{f_ob \cdot f_ok}=-\frac{l}{f_{ob}}\cdot \frac{s_0}{f_{ok}}$
+	\item \textbf{Auflösung Mikroskop} \\
+	mit Spalt b: $\delta_{\ir{min}} = \alpha = \arcsin\frac{\lambda}{b} \approx \frac{\lambda}{b}$ (Abbé Limit)\\
+	für runde Linse mit Durchmesser D: $\delta_{\ir{min}} = D\cdot\sin\alpha = 1,22\frac{\lambda}{D}$ (Rayleigh-Kriterium)\\
+\end{itemize}
 \end{sectionbox}
 \subsection{Absorption und Polarisation}
 \begin{sectionbox}
@@ -221,6 +237,52 @@ Für unpolarisiertes Licht gilt nach einem Polarisationsfilter: $I = \frac{I_0}{
 % Hydromechanik
 % ----------------------------------------------------------------------
 \section{Hydromechanik}
+\begin{sectionbox}
+Dichte: $\rho=\frac{m}{V}$\\
+Homogener Druck: $P=\frac{F_N}{A}$\\
+Kompressibilität: $\kappa = -\frac{1}{\Delta P}\cdot \frac{\Delta V}{V}$\\
+Kompressionsmodul: $K=\frac{1}{\kappa}$\\
+$R_E= \frac{V\cdot \rho \cdot L}{\eta}$
+
+\subsection{Hydraulische Presse}
+$\frac{F_1}{A_1}=\frac{F_2}{A_2}$
+$\frac{\Delta x_1}{\Delta x_2}=\frac{F_2}{F_1}?\frac{A_2}{A_1}$
+\subsection{Kontinuitätsgleichung}
+$\dot{m}=\rho_1 A_1 \vec{v_1}=\rho_2 A_2 \vec{v_2}$\\
+$\dot{V}=\frac{\dot{m}}{\rho}=A\vec{v}$
+
+\subsection{Bernoulli Gleichung}
+$\underbrace{p}_{\text{statischer Druck}} 
++ \underbrace{\frac{1}{2} \rho v^2}_{\text{dynamischer Druck}} 
++ \underbrace{\rho gh}_{\text{hydrostatischer Druck}} = \ir{const.}$\\
+$p_{\ir B,1}\stackrel{!}{=}p_{\ir B,2}$
+(Energieerhaltung der Hydromechanik)
+
+\subsection{Torricelli}
+$\vec{v_2}=\sqrt{2(gh+\frac{P_1-P_2}{\rho})}$\\
+$P_1=P_2=P_\infty = \SI{10e5}{\pascal}$
+
+\subsection{Gesetz von Hagen-Poiseulle}
+Strömung durch ein Rohr\\
+$\dot{V}=\frac{\pi (P_1-P_2)}{8\eta \cdot l}R^4$\\
+$v(r)=\frac{P_1-P_2}{4\eta \cdot l}(R^2-r^2)$
+
+\subsection{Strömungen}
+\begin{enumerate}
+	\item \textbf{Turbulente Strömung:} \\
+		Größe Geschwindigkeiten, geringe innere Reibung, hohe Reibung an den Wänden.\\
+			Newtonsches Reibungsgesetz:\\
+			$F_R=\eta A \frac{\diff v}{\diff x}$\\
+			$\eta=\eta_0e^{T/T_0}$ \\
+			$R_e >> 1$: $F_w=F_R+F_D=c_w \cdot A \cdot \frac{\rho v^2}{2}$
+	\item \textbf{Laminare Strömung:} \\
+			$R_e<1$: Stokesche Reibung\\
+			$F=b\cdot v = 6\pi \eta r v$
+\end{enumerate}
+\textbf{Hydrostatisches Paradoxon:} Druck am Boden hängt nur von Füllhöhe, nicht Form/Menge ab.\\
+\textbf{Hydrodynamisches Paradoxon:} Gleichgewicht bei $mg=\frac{1}{2}\rho v^2 A$. Wenn $v$ steigt, dann fällt $P$.
+\end{sectionbox}
+
 
 % Thermodynamik
 % ----------------------------------------------------------------------
