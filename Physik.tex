@@ -13,7 +13,7 @@
 
 % possible options: color/nocolor, english/german, threecolumn
 % defaults: color, english
-\documentclass[german, 8pt]{latex4ei/latex4ei_sheet}
+\documentclass[german]{latex4ei/latex4ei_sheet}
 
 % set document information
 \title{Physik}
@@ -42,6 +42,8 @@
 % Klassische Mechanik
 % ----------------------------------------------------------------------
 \section{Klassische Mechanik}
+\begin{sectionbox}
+
 \subsection{Bewegungen}
 $x={\ir const.} \rightarrow v=0 \qquad v={\ir const.} \rightarrow a=0$ \\
 $v=\dot{x} \qquad a=\ddot{x}$ \\
@@ -66,10 +68,13 @@ $s_y=h_0-\frac{g\cdot s_x^2}{2v_0^2}$
 \subsubsection{Schräger Wurf}
 $v_x=v_0\cos \alpha \qquad v_y=v_0\sin \alpha -gt$\\
 $v_h=\sqrt{v_0^2-2gh}$\\
-$s_x=v_0\cos \alpha t \qquad x_y=v_0 \sin \alpha t - /frac{1}{2} gt^2 +h_0$\\
-$s_w=\frac{v_0^2 \sin{2\alpha}}{g}$\\
-$t_w=\frac{2v_0\sin \alpha}{g}$
+$s_x=v_0\cos \alpha t \qquad s_y=v_0 \sin \alpha t - \frac{1}{2} gt^2 +h_0$\\
+$s_{x,\ir max}=\frac{v_0^2 \sin{2\alpha}}{g}$\\
+$t_w=\frac{2v_0\sin \alpha}{g}$ \qquad
 $h_{\ir max}=\frac{v_0^2 \sin^2 \alpha}{2g}+h_0$
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Newton'sche Axiome}
 \begin{enumerate}
 	\item Masse ist träge. Jeder Körper behält seinen Bewegungszustand bei.
@@ -77,6 +82,7 @@ $h_{\ir max}=\frac{v_0^2 \sin^2 \alpha}{2g}+h_0$
 	\item $F_{12}=-F_{21}$
 \end{enumerate}
 \textbf{Intertialsystem:} Koordinatensysteme die sich mit $v=\it const.$ zueinander bewegen.
+\end{sectionbox}
 \subsection{Kraft, Energie, Impuls}
 \subsubsection{Kraft}
 \subsubsection{Arbeit}
@@ -91,6 +97,7 @@ $h_{\ir max}=\frac{v_0^2 \sin^2 \alpha}{2g}+h_0$
 \subsubsection{Drehmoment}
 \subsubsection{Trägheitsmoment}
 \subsubsection{Drehimpuls}
+\begin{sectionbox}
 \subsection{Corioliskraft}
 \begin{emphbox}
 $\vec{F_c}=2m(v\times \omega)= 2m \cdot v \cdot w	\cdot \sin{(v\angle \omega)}$
@@ -104,7 +111,7 @@ $R_E=\SI{6370}{\kilo \meter}$\\
 $r=R_E \cos \varphi$
 $\omega_E=\frac{2\pi}{86400\si{\second}}$\\
 Auf der Nordhalbkugel zeigt $F_C$ nach rechts. Auf der Südhalbkugel nach links.
-
+\end{sectionbox}
 
 % Harmonische Schwingungen
 % ----------------------------------------------------------------------
@@ -133,15 +140,16 @@ Auf der Nordhalbkugel zeigt $F_C$ nach rechts. Auf der Südhalbkugel nach links.
 % Optik
 % ----------------------------------------------------------------------
 \section{Optik}
+\begin{sectionbox}
+\subsection{Rexlexion und Brechnung}
 $f_m \cdot \lambda_m = c_m$ \qquad
 $\lambda_m = \frac{\lambda_0}{m}$\\
 Berchnungsindex $n=\frac{c_0}{c_m}$
-\subsection{Rexlexion und Brechnung}
-\subsubsection{Brechung}
+\subsubsection{Brechungsmöglichkeiten}
 \begin{enumerate}
-\item[A)] zum Lot (dünn nach dicht)\\
+\item[A)] \textbf{zum Lot} (dünn nach dicht)\\
 $\sin \alpha > \sin \beta$ \qquad $c_1 > c_2$
-\item[B)] vom Lot (dicht nach dünn)\\
+\item[B)] \textbf{vom Lot} (dicht nach dünn)\\
 $\sin \alpha < \sin \beta$ \qquad $c_1 < c_2$
 \end{enumerate}
 \subsubsection{Gesetz von Snellius}
@@ -150,6 +158,9 @@ $\frac{\sin \alpha}{\sin \beta} = \frac{n_2}{n_1} = \frac {c_1}{c_2}$
 Nur möglich wenn $n_1 > n_2$ und $\theta > \theta_{\ir krit}$ \\
 $\theta_{\ir krit} = \arcsin \frac{n_2}{n_1}$\\
 Einfallswinkel = Ausfallswinkel
+\end{sectionbox}
+
+\begin{sectionbox}
 \subsection{Linsen}
 Linsengleichung
 \begin{emphbox}
@@ -164,8 +175,8 @@ $g\rightarrow \infty: b=f_B=\frac{n_2r}{n_2-n_1}$\\
 $b\rightarrow \infty: g=f_G=\frac{n_1r}{n_2-n_1}$\\
 %Bild
 \subsubsection{Dünne Linsen}
-$\frac{1}{f}=\frac{1}{g}+\frac{1}{b}=(\frac{n_2}{n_1}-1)(\frac{1}{r_1}-\frac{1}{r_2})$
-\textbf{Konvexe Linse (Sammellinse)}
+$\frac{1}{f}=\frac{1}{g}+\frac{1}{b}=(\frac{n_2}{n_1}-1)(\frac{1}{r_1}-\frac{1}{r_2})$\\
+\textbf{Konvexe Linse (Sammellinse)} \\
 $V_{\ir sammel}= \frac{b}{g}=\frac{b-f}{f}$\\
 Korrektur von Weitsichtigkeit \\
 %Bild
@@ -176,7 +187,7 @@ Korrektur von Weitsichtigkeit \\
 	\item $2f>g>f \Rightarrow \infty >b>2f \quad G<B$ (real und invertiert)
 	\item $0<g<f \Rightarrow -b>g \quad G<B$ (virtuell und aufrecht)
 \end{itemize}
-\textbf{Konkave Linse (Zerstreuungslinse)}
+\textbf{Konkave Linse (Zerstreuungslinse)}\\
 Korrektur von Kurzsichtigkeit\\
 \textbf{Abbildung}
 \begin{itemize}
@@ -186,7 +197,25 @@ Korrektur von Kurzsichtigkeit\\
 \end{itemize}
 \subsubsection{Dicke Linsen}
 \subsubsection{Linsensysteme}
-\subsection{weitere Gleichungen}
+\end{sectionbox}
+\subsection{Absorption und Polarisation}
+\begin{sectionbox}
+
+
+\subsubsection{Absorption}
+Berchungsindex mit Absorption: $n\rightarrow \tilde{n}=n-i\kappa$\\ 
+Re($\tilde{n}$)$=n$: Brechung \\
+Im($\tilde{n}$)$=\kappa$: Absorption \\
+Absorptionsgesetz von Lambert-Beer: $I=I_0e^{-\alpha \cdot d}=I_0e^{-\frac{2\omega}{c}\kappa d}$
+
+\subsubsection{Polarisation}
+
+Gesetz von Malus (für polarisiertes Licht): $I = I_0 \cos^2 \alpha$
+
+Für unpolarisiertes Licht gilt nach einem Polarisationsfilter: $I = \frac{I_0}{2}$
+
+\end{sectionbox}
+
 %Malus, Lambert-Beer, etc.
 
 % Hydromechanik
@@ -197,8 +226,11 @@ Korrektur von Kurzsichtigkeit\\
 % ----------------------------------------------------------------------
 \section{Thermodynamik}
 %aus alter LaTeX FS + Entropie und ein paar kleine Änderungen
-
-\textbf{Ideale Gasgleichung:} $p \cdot V = \nu \cdot R \cdot T$ \\
+\begin{sectionbox}
+\textbf{Ideale Gasgleichung:} 
+\begin{emphbox}
+$p \cdot V = \nu \cdot R \cdot T$ 
+\end{emphbox}
 Stoffmenge $\nu = \frac{m}{M}$ \qquad $M$: mol. Masse\\
 \textbf{Wärmemenge Q} \\
 $Q=C_p(T_2-T_1)=c \cdot m \cdot \Delta T$ \\ $c$: spez. Wärmekapazität \\
@@ -210,6 +242,17 @@ für $N=\ir const$ und $T=\ir const.$ gilt: $p_1V_1=p_2V_2$ \\
 feste Gasmenge; $V=\ir const.$\\
 $\frac{p_1}{T_1}=\frac{p_2}{T_2}$ \\
 
+\textbf{Thermodynamische Systeme:}
+\begin{itemize}
+	\item \textbf{Offen} (Verbrennungsmotor) \\
+		Austausch von Materie, Arbeit, Wärme
+	\item \textbf{Geschlossen} (Stirlingmotor) \\
+		Austausch von Arbeit, Wärme
+	\item \textbf{Abgeschlossen} (Thermoskanne) \\
+		kein Austausch mit der Umgebung
+		
+\end{itemize}
+
 \textbf{Mittlere kin. Energie eines Gases} \\
 $\overline{E}_{\ir kin}=\frac{3}{2}k_B \cdot T$ \\
 
@@ -217,7 +260,6 @@ $\overline{E}_{\ir kin}=\frac{3}{2}k_B \cdot T$ \\
 $U=\frac{3RT}{2M}$ \, $U$: innere Energie
 
 \textbf{Energien}
-\begin{sectionbox}
 $\Delta U = \int_{T_1}^{T_2} c \, \diff T$\\
 $W=-\int_{V_1}^{V_2} p \diff V$ \qquad $\partial W= -p \cdot \partial V$
 
@@ -258,10 +300,11 @@ Maß der Unordnung in einem System
 	\item Es ist wahrscheinlicher, dass die Unordnung zunimmt
 	\item Kann spontan nur in eine Richtung ablaufen
 \end{itemize}
-$\Rightarrow$ Entropie kann nur steigen oder konstant bleiben\\
+$\Rightarrow$ Entropie kann nur steigen oder konstant bleiben\\ \\
+
 $S=-k_B\sum p_i \ln p_i$ \\ 
 $p_i$: Wahrscheinlichkeiten der Mikrozustände\\
-$\partial S = \frac{\partial Q_rev}{T}$\\
+$\partial S = \frac{\partial Q_{rev}}{T}$\\
 Ideales Gas: $\Delta S= \int \partial S = n \cdot c_v \ln \frac{T_2}{T_1}+n\cdot R \ln \frac{V_2}{V_1}$
 
 
@@ -274,9 +317,9 @@ Ideales Gas: $\Delta S= \int \partial S = n \cdot c_v \ln \frac{T_2}{T_1}+n\cdot
 $P=\epsilon \sigma A T^4 = 4 \pi r^2 E_0$
 \end{emphbox}
 Für schwarze Körper gilt: $\epsilon = 1$\\
-Wienscher Verschiebungssatz: $\lambda_{\ir max}=\frac{\SI{2,898e-3}{\kelvin}}{T} \si{\meter}$
+Wienscher Verschiebungssatz: $\lambda_{\ir max}=\frac{\num{2,898e-3}}{T} \si{\kelvin \meter}$
 \subsection{Weiteres zur Quantenmechanik}
-
+Licht wird abhängig von der Frequenz in Quanten der Energie $h\cdot f$ emittiert und absorbiert.
 % ======================================================================
 % End
 % ======================================================================
