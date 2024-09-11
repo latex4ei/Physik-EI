@@ -40,11 +40,6 @@
 % ----------------------------------------------------------------------
 \maketitle   % requires ./img/Logo.pdf
 
-
-% Allgemein
-% ----------------------------------------------------------------------
-\section{Allgemeines}
-
 % Klassische Mechanik
 % ----------------------------------------------------------------------
 \section{Klassische Mechanik}
@@ -122,21 +117,23 @@ $m_0=M+m_a$
 \subsection{Planetenbewegungen}
 \subsubsection{Gravitation}
 $U_{\ir pot}=-G\frac{m_E\cdot m}{r} \qquad r>r_E$\\
-$\vec{F_G}=G\frac{m_1m_2}{r^2}\vec{e_r}$\\
+$\vec{F}_G=G\frac{m_1m_2}{r^2}\cdot \vec{e_r}$\\
 $g=G\cdot \frac{m}{r^2}$\\
-$W_G=Gm_1m_2(\frac{1}{r_1}-\frac{1}{r_2}$\\
+$W_G=Gm_1m_2(\frac{1}{r_1}-\frac{1}{r_2})$\\
 $F_G \, || \, r \rightarrow M=r\times F=0$\\
 \begin{sectionbox}
 Satellit-Erde: $\frac{1}{2}m_Sv^2=G\frac{m_Sm_E}{R_E}$ \\
 Stabile Umlaufbahn: $\omega_S=\sqrt{\frac{G\cdot m_E}{R_E^3}}\qquad v=\omega R_E$\\
-Geostat. Umlaufbahn: $r_g=(G\cdot m_E \cdot \frac{T_g^2}{4\pi^2})^{\frac{1}{3}} \qquad h_g=r_g-R_E$
+Geostat. Umlaufbahn: $r_g=\sqrt[3]{G\cdot m_E \cdot \frac{T_g^2}{4\pi^2}} \qquad h_g=r_g-R_E$
 \end{sectionbox}
 \subsubsection{Keplersche Gesetze}
+\begin{sectionbox}
 \begin{itemize}
 \item[1.] Keplersches Gesetz: Planetenbahnen sind Ellipsen um Stern in einem der beiden Brennpunkte\\
 \item[2.] Keplersches Gesetz: In gleicher Zeit wird die gleiche Fläche an einer Bahn aufgespannt\\$\frac{dA}{dt} = \frac{1}{2} \v r \v v sin \alpha = \frac{1}{2}\v r \times \v v = \frac{1}{2}m|\v L| \Rightarrow$ Der Drehimpuls ist zeitlich konstant\\
 \item[3.] Keplersches Gesetz: $\frac{T_1^2}{T_2^2} = \frac{a_1^3}{a_2^3}$ mit T: Umlaufzeit, a: Große Halbachse\\
 \end{itemize}
+\end{sectionbox}
 \subsection{Drehungen}
 \subsubsection{Drehmoment}
 $M=F\times r=F\cdot r\cdot \sin \alpha$\\
@@ -167,9 +164,11 @@ $F_C$: Auf der Nordhalbkugel nach rechts. Auf der Südhalbkugel nach links.
 $x(t)=A_0\cos(\omega t + \varphi)$ \\
 $\dot{x}(t)=-A_0\omega\sin(\omega t + \varphi)$\\
 $\ddot{x}(t)=-A_0\omega^2\sin(\omega t + \varphi)$
+
 \subsection{Frei ungedämpft}
 Bewegungsgleichung: $\ddot{x}+\omega_0^2x=0$\\
 $f_0=\frac{\omega_0}{2\pi} \qquad y_0=\frac{mg}{k} \qquad v_0 = \hat{x}\sqrt{\frac{k}{m}}$
+\begin{sectionbox}
 \subsubsection{Federpendel}
 $\omega_0^2=\frac{\text{Rücktreibende Kraft}}{\text{Einheitsmasse} \times \text{Einheitsauslenkung}}=\frac{k}{m} \rightarrow \omega = \sqrt{\frac{k}{m}}$\\
 $A_0=v_0\sqrt{\frac{m}{k}}=\frac{v_0}{\omega_0}$\\
@@ -184,12 +183,14 @@ Bewegungsgleichung: $\ddot{x}+\frac{g}{l}x=0$
 $\omega_0 = \sqrt{\frac{k_t}{I}}=\sqrt{\frac{k_t}{mr^2}}$\\
 $I=\frac{T_0^2}{4\pi^2}k_t \qquad T_0=2\pi \sqrt{\frac{I}{k_t}}$\\
 Bewegungsgleichung: $\ddot{x}+\frac{k_t}{I}x=0$
+\end{sectionbox}
 \subsection{Frei gedämpft}
 Stokesche Reibungskraft: $F_R=-6 \pi \eta R \vec{v}=-2m\delta\vec{v}$\\
 Bewegungsgleichung: $\ddot{x}+2\delta \dot{x}+\omega_0^2x=0$\\
  Resonanzfrequenz $\omega'=\sqrt{\omega_0^2-\delta^2}$ \\
  $\delta = \frac{b}{2m}=\frac{3\pi \eta R}{m}$\\
-\includegraphics[width=.9\columnwidth]{img/Schwingungen.pdf}
+ 
+\begin{sectionbox}
 \subsubsection{Schwingfall}
 $\omega_0^2>\delta^2$\\
 $\omega'=\sqrt{\omega_0^2-\delta^2}<\omega_0$\\
@@ -201,12 +202,16 @@ $x(t)=Ae^{-\delta t}\cdot (1+\delta t)$
 \subsubsection{Kriechfall}
 $\omega_0^2<\delta^2$\\
 $\omega'=i\delta \pm i\sqrt{\delta^2-\omega_0^2}$
-$x(t)=A_1e^{-(\delta+\sqrt{\delta^2-\omega_0^2})t}+A_2e^{-(\delta - \sqrt{\delta^2-\omega_0^2})t}$
+$x(t)=A_1e^{-(\delta+\sqrt{\delta^2-\omega_0^2})t}+A_2e^{-(\delta - \sqrt{\delta^2-\omega_0^2})t}$\\
+
+\includegraphics[width=.9\columnwidth]{img/Schwingungen.pdf}
+\end{sectionbox}
 \subsection{Erzwungen gedämpft}
 Bewegungsgleichung: $\ddot{x}+2\delta \dot{x}+\omega_0^2x=F_0e^{-i\Omega t}$\\
 %Resonanzfrequenz $\Omega_{\ir res}=\sqrt{\omega_0^2-2\gamma^2}$\\%
 $\hat{x}(t)=Ae^{i(\Omega t + \varphi}$\\
 $A(\Omega)=\frac{F_0/m}{\sqrt{(\omega_0^2-\Omega^2)^2+(\frac{b\Omega}{m})^2}}$\\
+\begin{sectionbox}
 \textbf{Resonanzfälle:}
 \begin{enumerate}
 	\item $\Omega < \omega_0$\\
@@ -220,29 +225,32 @@ $A(\Omega)=\frac{F_0/m}{\sqrt{(\omega_0^2-\Omega^2)^2+(\frac{b\Omega}{m})^2}}$\\
 		$A\rightarrow 0$\\
 		$\Delta \varphi = \pi \qquad \Omega \rightarrow \infty$
 \end{enumerate}
+\end{sectionbox}
 
 % Wellen
 % ----------------------------------------------------------------------
 \section{Wellen}
 \subsection{Allgemeines}
-Allgemeine Wellengleichung: $\frac{1}{c^2}\frac{\delta^2u}{\delta t^2}=\Delta u$\\
+Allgemeine Wellengleichung: $\frac{1}{c^2}\frac{\partial^2u}{\partial t^2}=\Delta u$\\
 $\frac{c}=\lambda \cdot f=\frac{\omega}{k}=\frac{x}{\Delta t}$\\
 $\omega = 2\pi f=\frac{2\pi}{T} \qquad k=\frac{2\pi}{\lambda}=\frac{\omega}{c}$
 Funktion: $y(x,t)=\hat{y}\sin(kx - \omega t + \phi)$
+\begin{sectionbox}
 \subsection{Doppler-Effekt}
 \begin{enumerate}
 	\item Beobachter \textbf{bewegt}, Quelle \textbf{ruht}\\
-		Annäherung: $f_B=f_Q(1+\frac{v_B}{c}$\\
-		Entfernung: $f_B=f_Q(1-\frac{v_B}{c}$
+		Annäherung: $f_B=f_Q(1+\frac{v_B}{c})$\\
+		Entfernung: $f_B=f_Q(1-\frac{v_B}{c})$
 	\item Beobachter \textbf{ruht}, Quelle \textbf{bewegt}\\
 		Annäherung: $f_B=\frac{f_Q}{1-v_Q/c}$\\
 		Entfernung: $f_B=\frac{f_Q}{1+v_Q/c}$
 	\item Beobachter \textbf{bewegt}, Quelle \textbf{bewegt}\\
 		$f_B = f_Q \frac{c \, \underset{\textcolor{green}{-}}{\textcolor{red}{+}} \, V_B}{c \, \underset{\textcolor{green}{+}}{\textcolor{red}{-}} \, V_Q} \qquad \text{Q} \, \underset{\textcolor{green}{\leftarrow} \textcolor{green}{\rightarrow}}{\textcolor{red}{\rightarrow} \textcolor{red}{\leftarrow}} \, \text{B}$\\
 		$f_B = f_Q \frac{c \, \underset{\textcolor{cyan}{-}}{\textcolor{purple}{+}} \, V_B}{c \, \underset{\textcolor{cyan}{-}}{\textcolor{purple}{+}} \, V_Q} \qquad \text{Q} \, \underset{\textcolor{cyan}{\rightarrow} \textcolor{cyan}{\rightarrow}}{\textcolor{purple}{\leftarrow} \textcolor{purple}{\leftarrow}} \, \text{B}$
-	\item Quelle \textbf{bewegt} ($v>1 \ir Ma$)\\
+	\item Quelle \textbf{bewegt} ($v>1 \, \ir Ma$)\\
 		$\sin \alpha=\frac{\diff w}{\diff s}=\frac{c_s t}{v_Qt}=\frac{1}{\ir Ma}$
 \end{enumerate}
+\end{sectionbox}
 \subsection{Schwebung}
 Tritt auf bei $f_1\approx f_2$ ($f_1 \neq f_2$)\\
 $f_S=|f_1-f_2| \qquad f_R= \frac{f_1+f_2}{2}$\\
@@ -266,14 +274,14 @@ Destruktiv: $\Delta \varphi = (2n+1)\pi$\\
 \begin{itemize}
 	\item Gangunterschied $\Delta s = a\sin \alpha = \frac{x}{n}\sin \alpha$
 	\item Phasendifferenz $\varphi = 2\pi \frac{\Delta}{\lambda}=2\pi a \frac{\sin \alpha}{n\lambda}$
-	\item Winkel Max: $\sin \alpha_n = \pm n \lambda/a$
-	\item Winkel Min: $\sin \alpha_n = \pm (n+\frac{1}{2})\lambda / a$
+	\item Winkel Max: $\sin \alpha_n = \pm n \cdot \frac{\lambda}{a}$
+	\item Winkel Min: $\sin \alpha_n = \pm (n+\frac{1}{2})\cdot \frac{\lambda}{a}$
 \end{itemize}
 \subsubsection{Doppelspalt}
 Int max: $\Delta s = \lambda n$ (Konstruktiv)\\
 Int min: $\Delta s = (2n+1)\frac{\lambda}{2}$ (Destruktiv)\\
 $\Delta s = a \sin \alpha' \approx a \frac{x}{d}$\\
-Kleinwinkelnäherung: $frac{x}{d}\approx \tan \alpha \approx \sin \alpha \approx \alpha \approx \alpha'$\\
+Kleinwinkelnäherung: $\frac{x}{d}\approx \tan \alpha \approx \sin \alpha \approx \alpha \approx \alpha'$\\
 $\Rightarrow \frac{\Delta s}{a} = \frac{x}{d}$
 \subsubsection{Gitter}
 Hauptmaximum: $\sin \alpha_{\ir max} = m\frac{\lambda}{d}$\\
@@ -281,7 +289,7 @@ Einfachspalt: $\sin \alpha_{\ir min} = \pm m \frac{\lambda}{a}$
 \subsection{Reflexion und Wellen in einem Medium}
 Festes Ende: $\varphi = \pi$ (Knoten am Ende)\\
 Loses Ende: $\varphi = 0$ (Bauch am Ende)\\
-Bei jeder zusätzlichen Oberschwingung wird die Welle gestaucht, sodass die obigen Bedingungen weiterhin gelten (Tipp: Skizze der Welle im Medium zeichnen)
+Bei jeder zusätzlichen Oberschwingung wird die Welle gestaucht, sodass die obigen Bedingungen weiterhin gelten müssen. (Tipp: Skizze der Welle im Medium zeichnen)
 
 
 % Optik
@@ -307,7 +315,6 @@ $\theta_{\ir krit} = \arcsin \frac{n_2}{n_1}$\\
 Einfallswinkel = Ausfallswinkel
 \end{sectionbox}
 
-\begin{sectionbox}
 \subsection{Linsen}
 Linsengleichung
 \begin{emphbox}
@@ -315,17 +322,20 @@ $D=\frac{1}{f}=\frac{1}{g}+\frac{1}{b}$
 \end{emphbox}
 Vergößerung: $V=\frac{B}{G}= - \frac{b}{g}=\frac{\tan \alpha}{\tan \alpha_0}$\\
 \includegraphics[width=\columnwidth]{img/Linsen_crop.pdf}
+\begin{sectionbox}
 \subsubsection{Hohlspiegel}
 $f=\frac{r}{2}$ \qquad $V=\frac{B}{G}= - \frac{n_1b}{n_2g}$ \\
 $D=\frac{n_1}{g}+\frac{n_2b}=\frac{n_2-n_1}{r}$\\
 $g\rightarrow \infty: b=f_B=\frac{n_2r}{n_2-n_1}$\\
 $b\rightarrow \infty: g=f_G=\frac{n_1r}{n_2-n_1}$\\
 %Bild
+\end{sectionbox}
+\begin{sectionbox}
 \subsubsection{Dünne Linsen}
 $\frac{1}{f}=\frac{1}{g}+\frac{1}{b}=(\frac{n_2}{n_1}-1)(\frac{1}{r_1}-\frac{1}{r_2})$\\
 \textbf{Konvexe Linse (Sammellinse)} \\
-$V_{\ir sammel}= \frac{b}{g}=\frac{b-f}{f}$\\
 Korrektur von Weitsichtigkeit \\
+$V_{\ir sammel}= \frac{b}{g}=\frac{b-f}{f}$\\
 %Bild
 \textbf{Abbildung}
 \begin{itemize}
@@ -342,9 +352,13 @@ Korrektur von Kurzsichtigkeit\\
 \item[$\rightarrow$] Bild immer verkleinert ($G>B$)
 \item[$\rightarrow$] Bild immer virtuell und aufrecht
 \end{itemize}
+\end{sectionbox}
+\begin{sectionbox}
 \subsubsection{Dicke Linsen}
 $\frac{1}{f}=(\frac{n}{n_0}-1)(\frac{1}{r_1}-\frac{1}{r_2}+\frac{(n-n_0)d}{n\cdot r_1 \cdot r_2})$\\
 $h_1=-\frac{f(n-1)d}{n\cdot r_2}$ \qquad $h_2=-\frac{f(n-1)d}{n\cdot r_1}$
+\end{sectionbox}
+\begin{sectionbox}
 \subsubsection{Linsensysteme}
 \begin{itemize}
 	\item \textbf{Lochkamera} \\
@@ -384,13 +398,12 @@ Für unpolarisiertes Licht gilt nach einem Polarisationsfilter: $I = \frac{I_0}{
 % Hydromechanik
 % ----------------------------------------------------------------------
 \section{Hydromechanik}
-\begin{sectionbox}
 Dichte: $\rho=\frac{m}{V}$\\
 Homogener Druck: $P=\frac{F_N}{A}$\\
 Kompressibilität: $\kappa = -\frac{1}{\Delta P}\cdot \frac{\Delta V}{V}$\\
 Kompressionsmodul: $K=\frac{1}{\kappa}$\\
 $R_E= \frac{V\cdot \rho \cdot L}{\eta}$
-
+\begin{sectionbox}
 \subsection{Hydraulische Presse}
 $\frac{F_1}{A_1}=\frac{F_2}{A_2}$ \\
 $\frac{\Delta x_1}{\Delta x_2}=\frac{F_2}{F_1}?\frac{A_2}{A_1}$
@@ -435,7 +448,7 @@ $v(r)=\frac{P_1-P_2}{4\eta \cdot l}(R^2-r^2)$
 % ----------------------------------------------------------------------
 \section{Thermodynamik}
 %aus alter LaTeX FS + Entropie und ein paar kleine Änderungen
-\begin{sectionbox}
+
 \textbf{Ideale Gasgleichung:} 
 \begin{emphbox}
 $p \cdot V = \nu \cdot R \cdot T$ 
@@ -450,7 +463,7 @@ für $N=\ir const$ und $T=\ir const.$ gilt: $p_1V_1=p_2V_2$ \\
 \textbf{2. Gesetz von Gay Lussac} \\
 feste Gasmenge; $V=\ir const.$\\
 $\frac{p_1}{T_1}=\frac{p_2}{T_2}$ \\
-
+\begin{sectionbox}
 \textbf{Thermodynamische Systeme:}
 \begin{itemize}
 	\item \textbf{Offen} (Verbrennungsmotor) \\
@@ -461,7 +474,7 @@ $\frac{p_1}{T_1}=\frac{p_2}{T_2}$ \\
 		kein Austausch mit der Umgebung
 		
 \end{itemize}
-
+\end{sectionbox}
 \textbf{Mittlere kin. Energie eines Gases} \\
 $\overline{E}_{\ir kin}=\frac{3}{2}k_B \cdot T$ \\
 
@@ -469,9 +482,9 @@ $\overline{E}_{\ir kin}=\frac{3}{2}k_B \cdot T$ \\
 $U=\frac{3RT}{2M}$ \, $U$: innere Energie
 
 \textbf{Energien}
+\begin{sectionbox}
 $\Delta U = \int_{T_1}^{T_2} c \, \diff T$\\
 $W=-\int_{V_1}^{V_2} p \diff V$ \qquad $\partial W= -p \cdot \partial V$
-
 \end{sectionbox}
 
 \subsection{Hauptsätze der Thermodynamik}
@@ -509,8 +522,7 @@ Maß der Unordnung in einem System
 	\item Es ist wahrscheinlicher, dass die Unordnung zunimmt
 	\item Kann spontan nur in eine Richtung ablaufen
 \end{itemize}
-$\Rightarrow$ Entropie kann nur steigen oder konstant bleiben\\ \\
-
+$\Rightarrow$ Entropie kann nur steigen oder konstant bleiben\\
 $S=-k_B\sum p_i \ln p_i$ \\ 
 $p_i$: Wahrscheinlichkeiten der Mikrozustände\\
 $\partial S = \frac{\partial Q_{rev}}{T}$\\
@@ -526,7 +538,7 @@ Ideales Gas: $\Delta S= \int \partial S = n \cdot c_v \ln \frac{T_2}{T_1}+n\cdot
 $P=\epsilon \sigma A T^4 = 4 \pi r^2 E_0$
 \end{emphbox}
 Für schwarze Körper gilt: $\epsilon = 1$\\
-Wienscher Verschiebungssatz: $\lambda_{\ir max}=\frac{\num{2,898e-3}}{T} \si{\kelvin \meter}$
+Wienscher Verschiebungssatz: $\lambda_{\ir max}=\frac{\SI{2,898e-3}{\kelvin}}{T} \si{\meter}$
 \subsection{Weiteres zur Quantenmechanik}
 Licht wird abhängig von der Frequenz in Quanten der Energie $h\cdot f$ emittiert und absorbiert.
 % ======================================================================
