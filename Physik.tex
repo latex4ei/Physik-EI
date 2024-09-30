@@ -43,7 +43,6 @@
 % Klassische Mechanik
 % ----------------------------------------------------------------------
 \section{Klassische Mechanik}
-\begin{sectionbox}
 
 \subsection{Bewegungen}
 $x={\ir const.} \rightarrow v=0 \qquad v={\ir const.} \rightarrow a=0$ \\
@@ -73,17 +72,16 @@ $s_x=v_0\cos \alpha t \qquad s_y=v_0 \sin \alpha t - \frac{1}{2} gt^2 +h_0$\\
 $s_{x,\ir max}=\frac{v_0^2 \sin{2\alpha}}{g}$\\
 $t_w=\frac{2v_0\sin \alpha}{g}$ \qquad
 $h_{\ir max}=\frac{v_0^2 \sin^2 \alpha}{2g}+h_0$
-\end{sectionbox}
 
-\begin{sectionbox}
 \subsection{Newton'sche Axiome}
+\begin{sectionbox}
 \begin{enumerate}
 	\item Masse ist träge. Jeder Körper behält seinen Bewegungszustand bei.
 	\item $F=m\cdot a=\frac{\diff p}{\diff t}=\dot{p}$
 	\item $F_{12}=-F_{21}$
 \end{enumerate}
-\textbf{Intertialsystem:} Koordinatensysteme die sich mit $v=\it const.$ zueinander bewegen.
 \end{sectionbox}
+\textbf{Intertialsystem:} Koordinatensysteme die sich mit $v=\it const.$ zueinander bewegen.
 \subsection{Kraft, Energie, Impuls}
 \subsubsection{Kraft}
 Federkraft: $F_F=-k(x-x_0)$ \\
@@ -121,11 +119,11 @@ $\vec{F}_G=G\frac{m_1m_2}{r^2}\cdot \vec{e_r}$\\
 $g=G\cdot \frac{m}{r^2}$\\
 $W_G=Gm_1m_2(\frac{1}{r_1}-\frac{1}{r_2})$\\
 $F_G \, || \, r \rightarrow M=r\times F=0$\\
-\begin{sectionbox}
+
 Satellit-Erde: $\frac{1}{2}m_Sv^2=G\frac{m_Sm_E}{R_E}$ \\
 Stabile Umlaufbahn: $\omega_S=\sqrt{\frac{G\cdot m_E}{R_E^3}}\qquad v=\omega R_E$\\
 Geostat. Umlaufbahn: $r_g=\sqrt[3]{G\cdot m_E \cdot \frac{T_g^2}{4\pi^2}} \qquad h_g=r_g-R_E$
-\end{sectionbox}
+
 \subsubsection{Keplersche Gesetze}
 \begin{sectionbox}
 \begin{itemize}
@@ -144,10 +142,9 @@ Hohlzylinder: $J = \frac{1}{2}m(r_a^2+r_i^2)$ (Drehachse ist Körperachse)\\
 Massive Kugel: $J = \frac{2}{5}mr^2$ (Drehachse durch Mittelpunkt)\\
 \subsubsection{Drehimpuls}
 $L=r\times p=I\cdot \omega = mrv$
-\begin{sectionbox}
 \subsection{Corioliskraft}
 \begin{emphbox}
-$\vec{F_c}=2m(v\times \omega)= 2m \cdot v \cdot w	\cdot \sin{(v\angle \omega)}$
+$\vec{F_c}=2m(v\times \omega)= 2m v w \cdot \sin{(v\angle \omega)}$
 \end{emphbox}
 Rechte-Hand-Regel: Daumen: $\vec{v}$, Zeigefinger: $\vec{\omega}$ (von Süden nach Norden)\\
 $a_c=-2(\omega \times v)=2v\omega$\\
@@ -156,7 +153,6 @@ $\Delta y = -\omega^2R\cos \beta \sin \beta \frac{h}{g}$\\
 %\includegraphics[width=0.25\columnwidth]{coriolis.pdf}
 $R_E=\SI{6370}{\kilo \meter} \qquad r=R_E \cos \varphi \qquad \omega_E=\frac{2\pi}{86400\si{\second}}$\\
 $F_C$: Auf der Nordhalbkugel nach rechts. Auf der Südhalbkugel nach links.
-\end{sectionbox}
 
 % Harmonische Schwingungen
 % ----------------------------------------------------------------------
@@ -201,7 +197,7 @@ $\omega'=0$\\
 $x(t)=Ae^{-\delta t}\cdot (1+\delta t)$
 \subsubsection{Kriechfall}
 $\omega_0^2<\delta^2$\\
-$\omega'=i\delta \pm i\sqrt{\delta^2-\omega_0^2}$
+$\omega'=i\delta \pm i\sqrt{\delta^2-\omega_0^2}$\\
 $x(t)=A_1e^{-(\delta+\sqrt{\delta^2-\omega_0^2})t}+A_2e^{-(\delta - \sqrt{\delta^2-\omega_0^2})t}$\\
 
 \includegraphics[width=.9\columnwidth]{img/Schwingungen.pdf}
@@ -235,8 +231,9 @@ Allgemeine Wellengleichung: $\frac{1}{c^2}\frac{\partial^2u}{\partial t^2}=\Delt
 $\frac{c}=\lambda \cdot f=\frac{\omega}{k}=\frac{x}{\Delta t}$\\
 $\omega = 2\pi f=\frac{2\pi}{T} \qquad k=\frac{2\pi}{\lambda}=\frac{\omega}{c}$
 Funktion: $y(x,t)=\hat{y}\sin(kx - \omega t + \phi)$
-\begin{sectionbox}
+
 \subsection{Doppler-Effekt}
+\begin{sectionbox}
 \begin{enumerate}
 	\item Beobachter \textbf{bewegt}, Quelle \textbf{ruht}\\
 		Annäherung: $f_B=f_Q(1+\frac{v_B}{c})$\\
@@ -251,10 +248,11 @@ Funktion: $y(x,t)=\hat{y}\sin(kx - \omega t + \phi)$
 		$\sin \alpha=\frac{\diff w}{\diff s}=\frac{c_s t}{v_Qt}=\frac{1}{\ir Ma}$
 \end{enumerate}
 \end{sectionbox}
+
 \subsection{Schwebung}
 Tritt auf bei $f_1\approx f_2$ ($f_1 \neq f_2$)\\
 $f_S=|f_1-f_2| \qquad f_R= \frac{f_1+f_2}{2}$\\
-$y(t)=\underbrace{2\hat{y}\cos(2\pi\frac{f_1-f_2}{2}\cdot t)}_{\text{Amplitudenfaktor}} \cdot \underbrace{\sin(2\pi \frac{f_1+f_2}{2}\cdot t)}_{f_R} $\\ 
+$y(t)=\underbrace{2\hat{y}\cos(2\pi \cdot \frac{f_1-f_2}{2}\cdot t)}_{\text{Amplitudenfaktor}} \cdot \underbrace{\sin(2\pi \cdot \frac{f_1+f_2}{2}\cdot t)}_{f_R} $\\ 
 \includegraphics[width=.9\columnwidth]{Schwebung_crop.pdf}
 \begin{minipage}{\columnwidth}
 \subsection{Gekoppelte Wellen}
@@ -297,7 +295,7 @@ Bei jeder zusätzlichen Oberschwingung wird die Welle gestaucht, sodass die obig
 % Optik
 % ----------------------------------------------------------------------
 \section{Optik}
-\begin{sectionbox}
+
 \subsection{Rexlexion und Brechnung}
 $f_m \cdot \lambda_m = c_m$ \qquad
 $\lambda_m = \frac{\lambda_0}{m}$\\
@@ -315,7 +313,7 @@ $\frac{\sin \alpha}{\sin \beta} = \frac{n_2}{n_1} = \frac {c_1}{c_2}$
 Nur möglich wenn $n_1 > n_2$ und $\theta > \theta_{\ir krit}$ \\
 $\theta_{\ir krit} = \arcsin \frac{n_2}{n_1}$\\
 Einfallswinkel = Ausfallswinkel
-\end{sectionbox}
+
 
 \subsection{Linsen}
 Linsengleichung
@@ -378,8 +376,6 @@ $h_1=-\frac{f(n-1)d}{n\cdot r_2}$ \qquad $h_2=-\frac{f(n-1)d}{n\cdot r_1}$
 \end{itemize}
 \end{sectionbox}
 \subsection{Absorption und Polarisation}
-\begin{sectionbox}
-
 
 \subsubsection{Absorption}
 Berchungsindex mit Absorption: $n\rightarrow \tilde{n}=n-i\kappa$\\ 
@@ -393,8 +389,6 @@ Gesetz von Malus (für polarisiertes Licht): $I = I_0 \cos^2 \alpha$
 
 Für unpolarisiertes Licht gilt nach einem Polarisationsfilter: $I = \frac{I_0}{2}$
 
-\end{sectionbox}
-
 %Malus, Lambert-Beer, etc.
 
 % Hydromechanik
@@ -405,16 +399,16 @@ Homogener Druck: $P=\frac{F_N}{A}$\\
 Kompressibilität: $\kappa = -\frac{1}{\Delta P}\cdot \frac{\Delta V}{V}$\\
 Kompressionsmodul: $K=\frac{1}{\kappa}$\\
 $R_E= \frac{V\cdot \rho \cdot L}{\eta}$
-\begin{sectionbox}
+
 \subsection{Hydraulische Presse}
 $\frac{F_1}{A_1}=\frac{F_2}{A_2}$ \\
-$\frac{\Delta x_1}{\Delta x_2}=\frac{F_2}{F_1}?\frac{A_2}{A_1}$
+$\frac{\Delta x_1}{\Delta x_2}=\frac{F_2}{F_1}=\frac{A_2}{A_1}$
 \subsection{Kontinuitätsgleichung}
 $\dot{m}=\rho_1 A_1 \vec{v_1}=\rho_2 A_2 \vec{v_2}$\\
 $\dot{V}=\frac{\dot{m}}{\rho}=A\vec{v}$
 
 \subsection{Bernoulli Gleichung}
-$\underbrace{p}_{\text{statischer Druck}} 
+$p_B=\underbrace{p}_{\text{statischer Druck}} 
 + \underbrace{\frac{1}{2} \rho v^2}_{\text{dynamischer Druck}} 
 + \underbrace{\rho gh}_{\text{hydrostatischer Druck}} = \ir{const.}$\\
 $p_{\ir B,1}\stackrel{!}{=}p_{\ir B,2}$
@@ -443,7 +437,6 @@ $v(r)=\frac{P_1-P_2}{4\eta \cdot l}(R^2-r^2)$
 \end{enumerate}
 \textbf{Hydrostatisches Paradoxon:} Druck am Boden hängt nur von Füllhöhe, nicht Form/Menge ab.\\
 \textbf{Hydrodynamisches Paradoxon:} Gleichgewicht bei $mg=\frac{1}{2}\rho v^2 A$. Wenn $v$ steigt, dann fällt $P$.
-\end{sectionbox}
 
 
 % Thermodynamik
