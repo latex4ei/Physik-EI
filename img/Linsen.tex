@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{pst-optexp}  % Load the pst-optexp package
+\usepackage{auto-pst-pdf}  % This package allows compiling PSTricks with pdflatex
+\usepackage{amsmath}
+\usepackage{geometry}
+
+\geometry{paperwidth=11in, paperheight=3in}
+\pagestyle{empty}
+\begin{document}
+\noindent
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\textbf{Linsenform} & 
+\begin{pspicture}(2,-1)
+    \lens[lensradiusleft=1.5, lensradiusright=1.5, lensheight=1.5](0,0)(2,0)
+\end{pspicture} & 
+\begin{pspicture}(2,-1)
+    \lens[lensradiusleft=0, lensradiusright=1.5, lensheight=1.5](0,0)(2,0)
+\end{pspicture} & 
+\begin{pspicture}(2,-1)
+    \psarc(-0.3,0){1.4}{-40}{40}
+    \psarc(0.4,0){1}{-70}{70}
+\end{pspicture} & 
+\begin{pspicture}(2,-1)
+    \lens[lensradiusleft=-1.5, lensradiusright=-1.5, lensheight=1.5](0,0)(2,0)
+\end{pspicture} & 
+\begin{pspicture}(2,-1)
+    \lens[lensradiusleft=0, lensradiusright=-1.5, lensheight=1.5](0,0)(2,0)
+\end{pspicture} &
+\begin{pspicture}(2,-1)
+    \lens[lensradiusleft=-1.0, lensradiusright=2.5, lensheight=1.5](0,0)(2,0)
+\end{pspicture}
+\rule{0pt}{2.5cm}
+\\
+\hline
+\textbf{Bezeichnung} & bikonvex & plankonvex & konkav-konvex & bikonkav & plankonkav & konvex-konkav \\
+\hline
+\textbf{Radien} & 
+$r_1 > 0$ \, $r_2 < 0$ & 
+$r_1 = \infty$ \, $r_2 < 0$ & 
+$r_1 < r_2 < 0$ & 
+$r_1 < 0$ \, $r_2 > 0$ & 
+$r_1 = \infty$ \, $r_2 > 0$ & 
+$r_2 < r_1 < 0$ \\
+\hline
+\textbf{Brennweite} & 
+$f' > 0$ & 
+$f' > 0$ & 
+$f' > 0$ & 
+$f' < 0$ & 
+$f' < 0$ & 
+$f' < 0$ \\
+\hline
+\end{tabular}
+
+\end{document}
